@@ -5,13 +5,13 @@ Cisco router lab simulating DHCP Relay configuration with optional ACL filtering
                       |                    |
               192.168.10.0/24       192.168.100.0/24
                       |_______10.0.0.0/30________|
-📦 Device Roles
-R1 (Cisco 1921): Acts as a DHCP Relay Agent
+## 📦 Device Roles
+## R1 (Cisco 1921): Acts as a DHCP Relay Agent
 
 ## R2 (Cisco 4331): Configured as the DHCP Server
 
-🔧 Configuration Summary
-R1 – DHCP Relay (Cisco 1921)
+## 🔧 Configuration Summary
+## R1 – DHCP Relay (Cisco 1921)
 
 ## hostname R1
 ## interface GigabitEthernet0/0
@@ -44,17 +44,18 @@ interface GigabitEthernet0/0
 
 ## ip route 192.168.10.0 255.255.255.0 10.0.0.1
 
-✅ Results
-PCs connected to R1’s LAN (192.168.10.0/24) receive IP addresses via DHCP
+## ✅ Results
+## PCs connected to R1’s LAN (192.168.10.0/24) receive IP addresses via DHCP
 
-Routing works between subnets via static routes
+## Routing works between subnets via static routes
 
-Relay function successfully tested
+## Relay function successfully tested
 
-💡 Notes
-Make sure the switch is forwarding traffic properly.
+## 💡 Notes
+## Make sure the switch is forwarding traffic properly.
 
-Disable Wi-Fi on the PC and ensure it's connected via Ethernet.
+## Disable Wi-Fi on the PC and ensure it's connected via Ethernet.
 
-Optional: ACLs can be added on R1 to restrict traffic based on source IPs.
-
+## Optional: ACLs can be added on R1 to restrict traffic based on source IPs.
+## Contact 
+https://github.com/IlkinNureddinov
